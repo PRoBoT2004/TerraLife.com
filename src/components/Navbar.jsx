@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link  } from 'react-scroll';
+import { FaTree } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,9 +48,18 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full  text-white transition-transform duration-300 ${visible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div>
-          <a href="/" className="text-5xl font-bold text-white">TerraLife</a>
-        </div>
+      <div className=''>
+  <Link
+    to="home"
+    spy={true}
+    smooth={true}
+    duration={500}
+    className="text-3xl font-bold text-white cursor-pointer"
+  >
+    <FaTree className='h-[20px] w-[20px] ml-[20px]' /> 
+    {/* //image of logo will go here */}
+  </Link>
+</div>
         <div className="hidden md:flex space-x-4">
           <Link 
             to="home"
@@ -119,17 +129,18 @@ const Navbar = () => {
         </div>
         <div className="md:hidden">
           <button 
-            className="text-white focus:outline-none"
+            className="text-white  absolutefocus:outline-none overflow-visible"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
+            
           </button>
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-gray-800 py-2">
+        <div className="md:hidden bg-gray-800  py-2">
           <div className="container mx-auto px-4 flex flex-col items-center">
             <Link to="home" className="text-white py-1 hover:text-gray-300">Home</Link>
             <hr className="my-1 w-full border-gray-600" /> {/* Divider */}
