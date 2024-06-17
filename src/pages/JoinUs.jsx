@@ -23,15 +23,15 @@ const JoinUs = () => {
             We are always looking for passionate individuals and organizations to join our mission of reforesting barren lands. Whether you are a landowner, a sponsor, or a volunteer, your contribution can make a significant impact.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-silvi rounded-lg shadow-lg p-6 flex flex-col items-center">
               <h2 className="text-xl font-bold mb-2">Landowners</h2>
               <p className="text-center mb-4">Share your unused land and be a part of the green revolution.</p>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-silvi rounded-lg shadow-lg p-6 flex flex-col items-center">
               <h2 className="text-xl font-bold mb-2">Sponsors</h2>
               <p className="text-center mb-4">Invest in sustainable afforestation projects and help create a healthier planet.</p>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-silvi rounded-lg shadow-lg p-6 flex flex-col items-center">
               <h2 className="text-xl font-bold mb-2">Volunteers</h2>
               <p className="text-center mb-4">Join our community of volunteers and participate in planting and maintenance activities.</p>
             </div>
@@ -44,6 +44,7 @@ const JoinUs = () => {
               Contact Us
             </button>
           </div>
+          
           {showForm && (
             <div className="overlay fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center" onClick={handleCloseForm}>
               <div className="bg-white p-6 rounded-lg shadow-lg">
