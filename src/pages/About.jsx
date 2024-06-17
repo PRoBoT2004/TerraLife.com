@@ -14,7 +14,7 @@ const About = () => {
           <p className="text-lg md:text-xl text-center mb-8">
             Join us in our mission to reforest barren lands and create a sustainable future for generations to come.
           </p>
-          <div className="bg-silvi text-black rounded-2xl p-4 drop-shadow-xl gap-8">
+          <div className="bg-silvi text-black rounded-lg shadow-lg p-6 flex flex-col items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Explore the Features and Benefits:</h2>
               <ul className="list-disc pl-6">
