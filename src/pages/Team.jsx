@@ -21,44 +21,44 @@ const Team = () => {
       name: "Krishna",
       role: "Team Member",
       photo: "./images/pf02.jpg",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
-      otherLink: "https://example.com/",
+      linkedin: "https://www.linkedin.com/in/abhay-patel-5ba94a27b/",
+      github: "https://github.com/PRoBoT2004",
+      otherLink: "",
     },
     {
       id: 3,
-      name: "Chirag Gawande",
+      name: "Chirag Gavande",
       role: "Team Member",
       photo: "./images/pf03.jpg",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
-      otherLink: "https://example.com/",
+      linkedin: "https://www.linkedin.com/in/chirag-gavande-58568127a/",
+      github: "https://github.com/chiraggavande",
+      otherLink: "atomocalex01@gmail.com",
     },
     {
       id: 4,
-      name: "Abahy Patel",
+      name: "Abhay Patel",
       role: "Team Member",
       photo: "./images/pf04.jpg",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
-      otherLink: "https://example.com/",
+      linkedin: "https://www.linkedin.com/in/abhay-patel-5ba94a27b/",
+      github: "https://github.com/KanoAb08",
+      otherLink: "patelabhay.dhara@gmail.com",
     },
     {
       id: 5,
-      name: "Jashesh Kanzariya ",
+      name: "Jashesh Kanzariya",
       role: "Team Member",
       photo: "./images/pf05.jpg",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
-      otherLink: "https://example.com/",
+      linkedin: "https://www.linkedin.com/in/jashesh-kanzariya/",
+      github: "https://github.com/jasheshK",
+      otherLink: "jashesh1803@gmail.com",
     },
     {
       id: 6,
-      name: "DEvashish",
+      name: "Devashish Jore",
       role: "Team Member",
       photo: "./images/pf06.jpg",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
+      linkedin: "https://www.linkedin.com/in/devashish-jore-82b0a2214/",
+      github: "https://github.com/Dj0511",
       otherLink: "https://example.com/",
     },
   ];
@@ -108,9 +108,9 @@ const Team = () => {
                       <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
                         <FiLinkedin className="h-6 w-6" /> {/* Using React Icon component for LinkedIn */}
                       </a>
-                      <a href={selectedMember.otherLink} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+                      {/* <a href={selectedMember.otherLink} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
                         <GiAbstract047 className="h-6 w-6" />
-                      </a>
+                      </a>  */}
                     </div>
                   </div>
                 </div>
