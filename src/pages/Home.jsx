@@ -44,7 +44,7 @@ const Home = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to TerraLife</h1>
         <p className="text-lg md:text-xl mb-6">{slogans[currentSloganIndex]}</p>
         <a
-          href="/app-download"
+          href="https:terralife-2d712.web.app"
           className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out"
         >
           Download Our App
